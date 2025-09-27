@@ -12,7 +12,7 @@
 <img width="1309" height="446" alt="Snipaste_2025-09-27_22-00-46" src="https://github.com/user-attachments/assets/2d394d8a-4d92-4183-a77b-6c3264459bcb" />  
 c语言的不一样，例如mac地址为112233445566  
 则修改为#define MAC_ADDR {0x11, 0x22, 0x33, 0x44, 0x55, 0x66}  
-go语音自行学习修改找规律
+go语音自行学习修改找规律   
 3.编译（等我慢慢写）  
 4.运行 ./文件名 -u username -p password -i 你认证前获取的ip或者你抓包得到的hostip （选填-v，开启log输出）
 ## 特别指出禁止任何个人或者公司将此项目的代码投入商业使用，由此造成的后果和法律责任均与本人无关。
