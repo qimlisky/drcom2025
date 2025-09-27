@@ -13,6 +13,14 @@
 c语言的不一样，例如mac地址为112233445566  
 则修改为#define MAC_ADDR {0x11, 0x22, 0x33, 0x44, 0x55, 0x66}  
 go语音自行学习修改找规律   
-3.编译（等我慢慢写）  
+3.编译  
+ARM64 版本 (64位 ARM 设备)  
+3-1. 安装依赖
+~~~BASH
+sudo apt update  
+sudo apt install build-essential git gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu -y
+~~~
+
+
 4.运行 ./文件名 -u username -p password -i 你认证前获取的ip或者你抓包得到的hostip （选填-v，开启log输出）
 ## 特别指出禁止任何个人或者公司将此项目的代码投入商业使用，由此造成的后果和法律责任均与本人无关。
