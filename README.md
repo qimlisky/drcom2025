@@ -1,7 +1,6 @@
 #### 2025年哆点pc客户端的认证脚本  
 
 ### 前言  
-文件还没传，文档只随便写了点  
 这是我自己研究编译，AI负责写程序的，我自己感觉代码还有问题，但是能用。目前有python，c，go语言版本的  
 ## 教程   
 1.自行学习其他老项目的抓包教程（来自drcoms/drcom-generic）  
@@ -49,6 +48,7 @@ go build -o drcom-client-mips -ldflags="-s -w" dr.go
 CGO_ENABLED=0 GOOS=linux GOARCH=mipsle \
 go build -o drcom-client-mipsel -ldflags="-s -w" dr.go
 ```
+上传的编译文件是适用某学校的，其他学校自行编译
 
 4.运行 ./文件名 -u username -p password -i 你认证前获取的ip或者你抓包得到的hostip （选填-v，开启log输出）
 ## 特别指出禁止任何个人或者公司将此项目的代码投入商业使用，由此造成的后果和法律责任均与本人无关。
