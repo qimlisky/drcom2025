@@ -14,7 +14,7 @@ c语言的不一样，例如mac地址为112233445566
 则修改为#define MAC_ADDR {0x11, 0x22, 0x33, 0x44, 0x55, 0x66}  
 go语音自行学习修改找规律   
 ### 3.编译(go语言，c不会)   
-##### 3-1-1. ARM64 版本 (64位 ARM 设备)  
+##### 3-1-1 ARM64 版本 (64位 ARM 设备)  
 安装依赖  
 ```BASH
 sudo apt update  
@@ -25,12 +25,17 @@ sudo apt install build-essential git gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu
 CGO_ENABLED=0 GOOS=linux GOARCH=arm64 \
 go build -o drcom-client-arm64 -ldflags="-s -w" dr.go
 ```
-#### 3-2-1 x86_64 版本 (64位 Linux)
+####  3-2-1ARMv7 版本 (32位 ARM 设备)
+```BASH
+CGO_ENABLED=0 GOOS=linux GOARCH=arm GOARM=7 \
+go build -o drcom-client-armv7 -ldflags="-s -w" dr.go
+```
+#### 3-3-1 x86_64 版本 (64位 Linux)
 ```bash
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 \
 go build -o drcom-client-x86 -ldflags="-s -w" dr.go
 ```
-##### 3-3-1  MIPS 版本 (32位大端序)  
+##### 3-4-1  MIPS 版本 (32位大端序)  
 安装 MIPS 工具链
 ```bash
 sudo apt install gcc-mips-linux-gnu -y
@@ -39,7 +44,7 @@ sudo apt install gcc-mips-linux-gnu -y
 CGO_ENABLED=0 GOOS=linux GOARCH=mips \
 go build -o drcom-client-mips -ldflags="-s -w" dr.go
 ```
-#### 3-4-1 MIPSEL 版本
+#### 3-5-1 MIPSEL 版本
 ```BASH
 CGO_ENABLED=0 GOOS=linux GOARCH=mipsle \
 go build -o drcom-client-mipsel -ldflags="-s -w" dr.go
