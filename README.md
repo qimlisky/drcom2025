@@ -16,10 +16,10 @@ go语音自行学习修改找规律
 3.编译  
 ARM64 版本 (64位 ARM 设备)  
 3-1. 安装依赖
-~~~BASH
+```BASH
 sudo apt update  
 sudo apt install build-essential git gcc-arm-linux-gnueabi gcc-aarch64-linux-gnu -y
-~~~
+```
 
 
 4.运行 ./文件名 -u username -p password -i 你认证前获取的ip或者你抓包得到的hostip （选填-v，开启log输出）
