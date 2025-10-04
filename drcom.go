@@ -16,7 +16,7 @@ import (
 	"time"
 )
 
-// 配置参数
+// 配置参数（修改下面小部分）
 var (
 	server      = ""
 	username    = "账号"
@@ -26,6 +26,7 @@ var (
 	primaryDNS  = ""
 	dhcpServer  = ""
 	macAddr     = ""
+	//MAC地址为aa：bb：cc……
 	hostOS      = "Windows 10"
 	verbose     bool
 )
